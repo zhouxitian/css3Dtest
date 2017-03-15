@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body { font-size: 14px; line-height: 2; font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体"; -webkit-text-size-adjust: none; }
+
+a { text-decoration: none; }
+
+ul, li, p, h1, h2, h3, h4, h5, dl, dt, dd, ol, body { padding: 0; margin: 0; }
+
+ul, li { list-style: none; }
+
+img { border: 0; }
+
+input { margin: 0; padding: 0; border-radius: 0; border: 0; }
+
+i, em { font-style: normal; }
+
+body { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #ccc; }
+
+#fps { position: absolute; left: 0; top: 0; color: #f00; font-size: 14px; z-index: 99; }
+
+#tip { position: absolute; left: 0; bottom: 0; color: #f00; font-size: 14px; z-index: 99; }
+
+#three { position: relative; height: 100%; max-width: 750px; margin: 0 auto; background-size: 100% 100%; }
+#three:before { top: 50%; left: 0; width: 100%; height: 0; border-top: 1px solid #f00; }
+#three:after { left: 50%; top: 0; height: 100%; border-left: 1px solid #f00; }
+
+.man { animation: man_ani 0.8s steps(7,end) infinite; -webkit-animation: man_ani 0.8s steps(7,end) infinite; animation-play-state: paused; -webkit-animation-play-state: paused; }
+.man.right { animation: man_ani_right 0.4s steps(7,end) infinite; -webkit-animation: man_ani_right 0.4s steps(7,end) infinite; animation-play-state: paused; -webkit-animation-play-state: paused; }
+.man.left { animation: man_ani_left 0.4s steps(7,end) infinite; -webkit-animation: man_ani_left 0.4s steps(7,end) infinite; animation-play-state: paused; -webkit-animation-play-state: paused; }
+
+.loading { z-index: 999; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; }
+.loading p { position: absolute; text-align: center; color: #fff; top: 50%; left: 0; width: 100%; }
+
+@keyframes man_ani { 0% { background-position: 0% bottom; }
+  100% { background-position: 100% bottom; } }
+@-webkit-keyframes man_ani { 0% { background-position: 0% bottom; }
+  100% { background-position: 100% bottom; } }
+@keyframes man_ani_right { 0% { background-position: 0% 66.66667%; }
+  100% { background-position: 100% 66.66667%; } }
+@-webkit-keyframes man_ani_right { 0% { background-position: 0% 66.66667%; }
+  100% { background-position: 100% 66.66667%; } }
+@keyframes man_ani_left { 0% { background-position: 0% 33.33333%; }
+  100% { background-position: 100% 33.33333%; } }
+@-webkit-keyframes man_ani_left { 0% { background-position: 0% 33.33333%; }
+  100% { background-position: 100% 33.33333%; } }
