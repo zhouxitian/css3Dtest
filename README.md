@@ -4,4 +4,4 @@ css3d.js实例测试。
 
 渲染性能相比canvas webgl要弱,只适合创建较小的三维面片场景。
 
-插件详情可查看：https://github.com/shrekshrek/css3d-engine。
+插件详情可查看：https://github.com/shrekshrek/css3d-engine
